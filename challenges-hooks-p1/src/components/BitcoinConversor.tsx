@@ -1,0 +1,31 @@
+import { useState } from 'react';
+
+type CoinExchange = {
+  euro: number;
+  bitcoin: number;
+};
+
+export const BitcoinConversor: React.FC = () => {
+  const [coin, setCoin] = useState<CoinExchange>({
+    euro: 1,
+    bitcoin: 0.01
+  });
+  
+  return (
+    <div>
+      <h2>Convierte Euros a Bitcoins</h2>
+      <input 
+        type="number"
+        value={coin.euro}
+        min="1"
+        onChange={(e) => {
+          setCoin({
+            ...coin,
+            euro: +e.target.value,
+          })
+        }}
+      />
+      <h3>{coin.euro} EUR = {(coin.bitcoin * coin.euro).toFixed(2)} BTC</h3>
+    </div>
+  );
+};
