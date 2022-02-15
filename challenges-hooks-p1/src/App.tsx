@@ -1,10 +1,12 @@
 import './App.css';
-import { BitcoinConversor } from './components/BitcoinConversor';
+// import { BitcoinConversor } from './components/BitcoinConversor';
+import { ChangeName } from './components/ChangeName';
 
 function App() {
   return (
     <div className="App">
-      <BitcoinConversor/>
+      {/* <BitcoinConversor/> */}
+      <ChangeName />
     </div>
   );
 }
