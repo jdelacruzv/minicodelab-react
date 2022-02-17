@@ -1,12 +1,16 @@
 import './App.css';
-// import { BitcoinConversor } from './components/BitcoinConversor';
+import { BitcoinConversor } from './components/BitcoinConversor';
 import { ChangeName } from './components/ChangeName';
+import { RenderOnClick } from './components/RenderOnClick';
 
 function App() {
   return (
-    <div className="App">
-      {/* <BitcoinConversor/> */}
-      <ChangeName />
+    <div className="app">
+      {<BitcoinConversor/>}
+      <hr />
+      {<ChangeName />}
+      <hr />
+      {<RenderOnClick />}
     </div>
   );
 }

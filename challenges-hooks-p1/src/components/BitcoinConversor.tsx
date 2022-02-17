@@ -1,3 +1,4 @@
+import '../App.css';
 import { useState } from 'react';
 
 type CoinExchange = {
@@ -12,8 +13,9 @@ export const BitcoinConversor: React.FC = () => {
   });
   
   return (
-    <div>
-      <h2>Convierte Euros a Bitcoins</h2>
+    <>
+      <h2>Reto 01 - Valor del Bitcoin</h2>
+      <h3>Convierte Euros a Bitcoins</h3>
       <input 
         type="number"
         value={coin.euro}
@@ -26,6 +28,6 @@ export const BitcoinConversor: React.FC = () => {
         }}
       />
       <h3>{coin.euro} EUR = {(coin.bitcoin * coin.euro).toFixed(2)} BTC</h3>
-    </div>
+    </>
   );
 };

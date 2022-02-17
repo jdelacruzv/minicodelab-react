@@ -5,15 +5,17 @@ export const ChangeName: React.FC = () => {
 
   // Aquí cambiaremos el nombre en el render inicial, ¿como lo harás?
   useEffect(() => {
-    // console.log('Nombre del estado inicial: MiniCodeLab')
-    setName('Jose De La Cruz'); 
+    setName('Learning React'); 
   }, []);
 
-  
+  useEffect(() => {
+    setName(name.toUpperCase());
+  });
 
   return (
     <>
-      <h2>El nombre es: {name}</h2>
+      <h2>Reto 03 - Cambia el nombre en el Render</h2>
+      <h3>El nombre es: {name}</h3>
       <input 
         type="text"
         value={name}
