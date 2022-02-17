@@ -3,14 +3,14 @@ import { useState, useEffect } from 'react';
 export const ChangeName: React.FC = () => {
   const [name, setName] = useState<string>('MiniCodeLab');
 
-  // Aquí cambiaremos el nombre en el render inicial, ¿como lo harás?
   useEffect(() => {
+    // console.log(`Nombre inical: ${name}`);
     setName('Learning React'); 
   }, []);
 
   useEffect(() => {
-    setName(name.toUpperCase());
-  });
+    // setName(name.toUpperCase());
+  }, []);
 
   return (
     <>
