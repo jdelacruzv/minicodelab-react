@@ -3,6 +3,7 @@ import { BitcoinConversor } from './components/BitcoinConversor';
 import { AvengersPanel } from './components/AvengersPanel';
 import { ChangeName } from './components/ChangeName';
 import { RenderOnClick } from './components/RenderOnClick';
+import { RickAndMortyFilter } from './components/RickAndMortyFilter';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       {<ChangeName />}
       <hr />
       {<RenderOnClick />}
+      <hr />
+      {<RickAndMortyFilter />}
     </div>
   );
 }

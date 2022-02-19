@@ -3,8 +3,33 @@
   margin: 2em;
 }
 
+input {
+  width: 250px;
+}
+
 img {
   width: 10em;
   height: 11em;
   margin: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+.character-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.character-input {
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 768px ) {
+  .character-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
