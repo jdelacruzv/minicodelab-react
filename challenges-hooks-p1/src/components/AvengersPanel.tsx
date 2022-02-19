@@ -1,5 +1,5 @@
 import '../App.css';
-import { useState } from "react";
+import { useState } from 'react';
 
 const myAvenger = {
   ironMan: 'https://www.sideshow.com/storage/product-images/500846U/the-invincible-iron-man_marvel_silo_lg.png',
@@ -24,7 +24,7 @@ export const ButtonComponent = ({ name, url }: Props) => {
   );
 };
 
-export const AvengersPanel = () => {
+export const AvengersPanel: React.FC = () => {
   return (
     <>
       <h2>Reto 02 - Select Avenger</h2>
@@ -34,10 +34,3 @@ export const AvengersPanel = () => {
     </>
   );
 };
-
-/*
-{ myAvengerKeys.map((key) => 
-    <button key={key} onClick={() => setVisible(!visible)}>{key}</button>
-  )
-}
-*/
