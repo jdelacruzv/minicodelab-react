@@ -5,7 +5,6 @@ const [name, setName] = useState<string>("MiniCodeLab");
 	const [isInputUsed, setIsInputUsed] = useState<boolean>(false);
 
 	useEffect(() => {
-		// Cambia el state al montarse el componente
 		setName("Learning React");
 	}, []);
 
