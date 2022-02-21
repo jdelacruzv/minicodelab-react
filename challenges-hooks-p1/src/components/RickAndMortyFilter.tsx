@@ -22,9 +22,9 @@ export const RickAndMortyFilter: React.FC = () => {
   const filteredCharacter = characterList.filter((character) => 
     character.name.toLowerCase() === filter.trim().toLowerCase());
 
-  useEffect(() => {    
-    filteredCharacter.map((character) => setFilter(character.name));
-  }, [filter]);
+  useEffect(() => {
+		filteredCharacter.map((character) => setFilter(character.name));
+	});
 
   return (
     <>
@@ -33,7 +33,7 @@ export const RickAndMortyFilter: React.FC = () => {
 			<div className='character-container'>
 				<ul className="character-list">
           {characterList.map((character) => (
-            <li className="character-list" key={character.id}>
+            <li key={character.id} className="character-list">
 							{character.name}
 						</li>
 					))}
@@ -47,10 +47,10 @@ export const RickAndMortyFilter: React.FC = () => {
 					/>
 					<h3>{filter}</h3>
 					{filteredCharacter.map((character) => (
-            <>
-              <img key={character.id} src={character.image} alt={character.name} />
+            <div key={character.id} >
+              <img src={character.image} alt={character.name} />
               <p>{character.status}</p>
-            </>
+            </div>
 					))}
 				</div>
 			</div>

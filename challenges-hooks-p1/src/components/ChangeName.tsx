@@ -6,7 +6,7 @@ export const ChangeName: React.FC = () => {
 
   useEffect(() => {
     // Cambia el state al montarse el componente a Learning React
-		setName("Learning React");
+    setName("Learning React");
 	}, []);
 
   useEffect(() => {
