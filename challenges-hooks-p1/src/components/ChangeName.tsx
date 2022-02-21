@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 export const ChangeName: React.FC = () => {
-	const [name, setName] = useState<string>("MiniCodeLab");
+const [name, setName] = useState<string>("MiniCodeLab");
 	const [isInputUsed, setIsInputUsed] = useState<boolean>(false);
 
 	useEffect(() => {
-		// Cambia el state al montarse el componente a Learning React
+		// Cambia el state al montarse el componente
 		setName("Learning React");
 	}, []);
 
