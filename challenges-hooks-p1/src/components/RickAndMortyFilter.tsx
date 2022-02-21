@@ -19,7 +19,8 @@ export const RickAndMortyFilter: React.FC = () => {
     })();
   }, []);
   
-  const filteredCharacter = characterList.filter((character) => character.name === filter);
+  const filteredCharacter = characterList.filter((character) => 
+    character.name.toLowerCase() === filter.trim().toLowerCase());
 
   useEffect(() => {    
     filteredCharacter.map((character) => setFilter(character.name));
