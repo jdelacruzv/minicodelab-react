@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export const ChangeName: React.FC = () => {
-const [name, setName] = useState<string>("MiniCodeLab");
+	const [name, setName] = useState<string>("MiniCodeLab");
 	const [isInputUsed, setIsInputUsed] = useState<boolean>(false);
 
 	useEffect(() => {
