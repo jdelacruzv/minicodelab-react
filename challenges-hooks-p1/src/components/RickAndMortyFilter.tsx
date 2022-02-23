@@ -20,7 +20,8 @@ export const RickAndMortyFilter: React.FC = () => {
 			setCharacterList(data.results);
 		})();
 	}, []);
-
+	
+	// filtra el caracter buscado
 	const filteredCharacter = characterList.filter(
 		(character) => character.name.toLowerCase() === filter.trim().toLowerCase()
 	);
